@@ -1,0 +1,15 @@
+SYSTEM: 2025/08/25 22:06:13 main.go:17: app is started
+INFO: 2025/08/25 22:06:31 cmd.go:92: exit
+SYSTEM: 2025/08/25 22:06:31 cmd.go:239: app is closed
+SYSTEM: 2025/08/25 22:19:25 main.go:17: app is started
+INFO: 2025/08/25 22:19:34 cmd.go:92: help
+INFO: 2025/08/25 22:19:44 cmd.go:92: help
+INFO: 2025/08/25 22:20:22 cmd.go:92: exit
+SYSTEM: 2025/08/25 22:20:22 cmd.go:239: app is closed
+SYSTEM: 2025/08/25 22:25:08 main.go:17: app is started
+INFO: 2025/08/25 22:25:30 cmd.go:92: exit
+SYSTEM: 2025/08/25 22:25:30 cmd.go:239: app is closed
+SYSTEM: 2025/08/25 23:05:30 main.go:17: app is started
+INFO: 2025/08/25 23:07:27 cmd.go:92: history
+INFO: 2025/08/25 23:07:35 cmd.go:92: exit
+SYSTEM: 2025/08/25 23:07:35 cmd.go:239: app is closed
