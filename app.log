@@ -13,3 +13,38 @@ SYSTEM: 2025/08/25 23:05:30 main.go:17: app is started
 INFO: 2025/08/25 23:07:27 cmd.go:92: history
 INFO: 2025/08/25 23:07:35 cmd.go:92: exit
 SYSTEM: 2025/08/25 23:07:35 cmd.go:239: app is closed
+SYSTEM: 2025/08/26 19:22:32 main.go:17: app is started
+INFO: 2025/08/26 19:22:41 cmd.go:92: list
+INFO: 2025/08/26 19:23:59 cmd.go:92: add "Сходить в магазин" "2025-08-26 19:24" "low"
+INFO: 2025/08/26 19:24:04 cmd.go:92: list
+INFO: 2025/08/26 19:25:37 cmd.go:92: reminder d20f9ee6-f5d5-4909-9718-c2790f18bc31 "взять наличные" "2025-08-26 19:26"
+INFO: 2025/08/26 19:25:41 cmd.go:92: list
+INFO: 2025/08/26 19:26:12 cmd.go:92: exit
+SYSTEM: 2025/08/26 19:26:12 cmd.go:239: app is closed
+SYSTEM: 2025/08/26 19:27:13 main.go:17: app is started
+INFO: 2025/08/26 19:27:18 cmd.go:92: list
+INFO: 2025/08/26 19:28:44 cmd.go:92: exit
+SYSTEM: 2025/08/26 19:28:44 cmd.go:239: app is closed
+SYSTEM: 2025/08/26 19:28:50 main.go:17: app is started
+INFO: 2025/08/26 19:28:53 cmd.go:92: list
+INFO: 2025/08/26 19:29:42 cmd.go:92: reminder d20f9ee6-f5d5-4909-9718-c2790f18bc31 тест "2025-12-12 12:12"
+INFO: 2025/08/26 19:30:12 cmd.go:92: add test1 2025-12-12 12:12 low
+ERROR: 2025/08/26 19:30:12 cmd.go:116: Error adding event (title: test1, date: 2025-12-12, priority: 12:12): can't create date: Invalid date format
+INFO: 2025/08/26 19:30:30 cmd.go:92: add test1 "2025-12-12 12:12" low
+INFO: 2025/08/26 19:30:41 cmd.go:92: list
+INFO: 2025/08/26 19:31:03 cmd.go:92: add f
+INFO: 2025/08/26 19:31:30 cmd.go:92: add "test" "2026-12-12 12:12" "low"
+INFO: 2025/08/26 19:31:34 cmd.go:92: list
+INFO: 2025/08/26 19:31:52 cmd.go:92: remove 
+INFO: 2025/08/26 19:31:57 cmd.go:92: remove efwef
+ERROR: 2025/08/26 19:31:57 cmd.go:144: Error delete event (id: efwef): event with key "efwef" not found
+INFO: 2025/08/26 19:32:06 cmd.go:92: remove 3addc95a-4cdb-4cc6-8459-eb8d10878955
+ERROR: 2025/08/26 19:32:06 cmd.go:144: Error delete event (id: 3addc95a-4cdb-4cc6-8459-eb8d10878955): <nil>
+INFO: 2025/08/26 19:32:10 cmd.go:92: list
+INFO: 2025/08/26 19:32:24 cmd.go:92: remove d20f9ee6-f5d5-4909-9718-c2790f18bc31
+ERROR: 2025/08/26 19:32:24 cmd.go:144: Error delete event (id: d20f9ee6-f5d5-4909-9718-c2790f18bc31): <nil>
+INFO: 2025/08/26 19:32:34 cmd.go:92: remove 2fb933dc-b45e-4218-818c-6271287f0d2b 
+ERROR: 2025/08/26 19:32:34 cmd.go:144: Error delete event (id: 2fb933dc-b45e-4218-818c-6271287f0d2b): <nil>
+INFO: 2025/08/26 19:32:38 cmd.go:92: list
+INFO: 2025/08/26 19:32:42 cmd.go:92: exit
+SYSTEM: 2025/08/26 19:32:42 cmd.go:239: app is closed

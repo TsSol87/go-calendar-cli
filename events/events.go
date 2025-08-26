@@ -104,7 +104,7 @@ func (e *Event) Update(title string, dateStr string, priorityStr string) error {
 }
 
 func (e Event) Print() {
-	fmt.Printf("ID: %s  Событие: %s  Дата: %s  Приоритет: %s\n", e.ID, e.Title, e.StartAt.Format("2006-01-02T15:04:05"), e.Priority)
+	fmt.Printf("ID: %s  Событие: %s  Дата: %s  Приоритет: %s (Напоминание: %s)\n", e.ID, e.Title, e.StartAt.Format("2006-01-02T15:04:05"), e.Priority, e.Reminder)
 }
 
 func (e *Event) AddReminder(message string, at time.Time, notify func(msg string)) error {

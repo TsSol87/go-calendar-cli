@@ -17,6 +17,21 @@ type Reminder struct {
 
 var ErrEmptyMessage = errors.New("message is empty")
 
+func (r *Reminder) String() string {
+	if r == nil {
+		return "не установлено"
+	}
+	status := "не отправлено"
+	if r.Sent {
+		status = "отправлено"
+	}
+	return fmt.Sprintf("\"%s\", Время: %s, Статус: %s",
+		r.Message,
+		r.At.Format("2006-01-02 15:04:05"),
+		status,
+	)
+}
+
 func NewReminder(message string, at time.Time, notify func(msg string)) (*Reminder, error) {
 	if len(strings.TrimSpace(message)) == 0 {
 		return nil, fmt.Errorf("can't create reminder: %w", ErrEmptyMessage)

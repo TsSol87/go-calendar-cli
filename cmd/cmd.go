@@ -188,7 +188,7 @@ func (c *Cmd) executor(input string) {
 		}
 	case "reminder":
 		if len(parts) < 4 {
-			fmt.Println("Формат: reminder \"ID события\" \"сообщение\" \"дата и время\" \"таймер\"")
+			fmt.Println("Формат: reminder \"ID события\" \"сообщение\" \"дата и время\"")
 			return
 		}
 		id := parts[1]
