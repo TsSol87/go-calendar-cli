@@ -117,13 +117,12 @@ func (c *Calendar) SetEventReminder(id, message string, dateStr string) error {
 		return fmt.Errorf("can't create date: %w", events.ErrIsValidDate)
 	}
 
-	t := at.UTC()
-	now := time.Now().UTC()
-	if t.Before(now) {
-		return fmt.Errorf("no reminder has been added: time %q has already passed", t)
+	now := time.Now().In(at.Location())
+	if at.Before(now) {
+		return fmt.Errorf("no reminder has been added: time %q has already passed", at)
 	}
 
-	err := e.AddReminder(message, t, c.Notify)
+	err := e.AddReminder(message, at, c.Notify)
 	if err != nil {
 		return err
 	}
